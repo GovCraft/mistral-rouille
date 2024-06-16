@@ -12,7 +12,7 @@ supportAsync: true
 preferUnsignedInt: true
 supportMultipleResponses: true
 useSingleRequestParameter: true
-infoEmail: mistral.rouille@govcraft.ai
+infoEmail: roland@govcraft.ai
 typeMappings:
   int: isize
   integer: isize
