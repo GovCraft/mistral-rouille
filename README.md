@@ -59,7 +59,6 @@ Class | Method | HTTP request | Description
  - [ChatCompletionResponseFunctionCall](docs/ChatCompletionResponseFunctionCall.md)
  - [ChatCompletionResponseJsonMode](docs/ChatCompletionResponseJsonMode.md)
  - [ChatCompletionResponseJsonModeChoicesInner](docs/ChatCompletionResponseJsonModeChoicesInner.md)
- - [ChatCompletionUsage](docs/ChatCompletionUsage.md)
  - [ChatMessage](docs/ChatMessage.md)
  - [ChatRequest](docs/ChatRequest.md)
  - [ChatUsage](docs/ChatUsage.md)
@@ -103,6 +102,7 @@ Class | Method | HTTP request | Description
  - [TrainingParameters](docs/TrainingParameters.md)
  - [UploadFileOut](docs/UploadFileOut.md)
  - [UploadFileResponse](docs/UploadFileResponse.md)
+ - [Usage](docs/Usage.md)
  - [WandbIntegration](docs/WandbIntegration.md)
  - [WandbIntegrationOut](docs/WandbIntegrationOut.md)
 
