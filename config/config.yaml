@@ -1,5 +1,5 @@
 modelNamePrefix: ""
-packageVersion: "1.1.2"
+packageVersion: "1.1.3"
 modelNameSuffix: ""
 apiNameSuffix: "Api"
 bestFitInt: true
