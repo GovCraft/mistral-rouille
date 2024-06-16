@@ -22,7 +22,7 @@ cargo add mistral-rouille
 ```
 or add
 ```toml
-mistral-rouille = { path = "./mistral-rouille" }
+mistral-rouille = "1.1.2"
 ```
 
 ## Documentation for API Endpoints
