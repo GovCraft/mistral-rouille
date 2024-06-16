@@ -1,0 +1,32 @@
+[package]
+name = "mistral-rouille"
+version = "1.1.4"
+authors = ["roland@govcraft.ai"]
+description = "Mistral Rouille is a Rust crate customized from Mistral's official OpenAPI specification. This crate provides a convenient and type-safe interface for interacting with Mistral's API, using the Reqwest crate for HTTP requests. Designed to be easily integrated into your Rust projects, Mistral Rouille offers robust functionality for all Mistral API endpoints, ensuring seamless communication with the configured endpoint."
+license = "MIT OR Apache-2.0"
+edition = "2021"
+repository = "https://github.com/GovCraft/mistral-rouille"
+keywords=["openapi","mistral","llm","api-client","codegen"]
+categories=["network-programming","api-bindings","web-programming::http-client","asynchronous","web-programming"]
+readme = "README.md"
+
+[dependencies]
+dotenv = { version = "0.15.0", features = ["clap"] }
+tracing-subscriber = "0.3.18"
+tokio-macros = "2.3.0"
+tracing = "0.1.40"
+serde = { version = "^1.0", features = ["derive"] }
+serde_with = { version = "^3.8", default-features = false, features = ["base64", "std", "macros"] }
+serde_json = "^1.0"
+url = "^2.5"
+uuid = { version = "^1.8", features = ["serde", "v4"] }
+reqwest = { version = "^0.12", features = ["json", "multipart"] }
+
+[dev-dependencies]
+tokio = {version="1.38.0", features=["full"]}
+anyhow = "1.0.86"
+tracing = "0.1.40"
+dotenv = { version = "0.15.0", features = ["clap"] }
+tracing-subscriber = "0.3.18"
+tracing-test = "0.2.5"
+tokio-macros = "2.3.0"
