@@ -7,6 +7,9 @@
  * {{{.}}}
  *
  {{/appDescription}}
+{{^hideGenerationTimestamp}}
+    - Build date: {{{generatedDate}}}
+{{/hideGenerationTimestamp}}
  * Generated using: https://openapi-generator.tech
  * Open API specification v{{#version}}{{{.}}}{{/version}} provided by Mistral @ https://docs.mistral.ai/redocusaurus/plugin-redoc-0.yaml
  * Custom generation templates by [GovCraft Ai](https://www.govcraft.ai)
