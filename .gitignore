@@ -2,7 +2,9 @@ generated-client/.openapi-generator
 generated-client/README.md
 generated-client/.travis.yml
 generated-client/git_push.sh
-
+generated-client/src/**
+generated-client/docs/**
+generated-client/*.*
 .env
 target
 .idea
