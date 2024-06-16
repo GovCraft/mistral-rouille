@@ -12,7 +12,7 @@ supportAsync: true
 preferUnsignedInt: true
 supportMultipleResponses: true
 useSingleRequestParameter: true
-infoEmail: rodzilla@proton.me
+infoEmail: mistral.rouille@govcraft.ai
 typeMappings:
   int: isize
   integer: isize
