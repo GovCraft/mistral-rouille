@@ -1,4 +1,8 @@
-generated-client
+generated-client/.openapi-generator
+generated-client/README.md
+generated-client/.travis.yml
+generated-client/git_push.sh
+
 .env
 target
 .idea
