@@ -805,7 +805,7 @@ dependencies = [
 
 [[package]]
 name = "mistral-rouille"
-version = "1.1.1"
+version = "1.1.2"
 dependencies = [
  "anyhow",
  "dotenv",
