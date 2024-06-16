@@ -89,7 +89,10 @@ impl Default for {{classname}} {
 {{^isEnum}}
 {{^discriminator}}
 {{#vendorExtensions.x-rust-has-byte-array}}#[serde_as]
-{{/vendorExtensions.x-rust-has-byte-array}}{{#oneOf.isEmpty}}#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
+{{/vendorExtensions.x-rust-has-byte-array}}
+{{#oneOf.isEmpty}}
+
+#[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
 pub struct {{{classname}}} {
 {{#vars}}
     {{#description}}
@@ -104,7 +107,17 @@ pub struct {{{classname}}} {
 }
 
 impl {{{classname}}} {
-    {{#description}}
+    /// Creates a new `{{{classname}}}` instance.
+    ///
+    /// # Arguments
+{{#requiredVars}}
+    /// * `{{{name}}}`
+    {{/requiredVars}}
+    ///
+    /// # Returns
+    ///
+    /// A new `{{{classname}}}` instance.
+{{#description}}
     /// {{{.}}}
     {{/description}}
     pub fn new({{#requiredVars}}{{{name}}}: {{#isNullable}}Option<{{/isNullable}}{{#isEnum}}{{#isArray}}{{#uniqueItems}}std::collections::HashSet<{{/uniqueItems}}{{^uniqueItems}}Vec<{{/uniqueItems}}{{/isArray}}{{{enumName}}}{{#isArray}}>{{/isArray}}{{/isEnum}}{{^isEnum}}{{#isByteArray}}Vec<u8>{{/isByteArray}}{{^isByteArray}}{{{dataType}}}{{/isByteArray}}{{/isEnum}}{{#isNullable}}>{{/isNullable}}{{^-last}}, {{/-last}}{{/requiredVars}}) -> {{{classname}}} {
