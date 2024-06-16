@@ -12,6 +12,7 @@ supportAsync: true
 preferUnsignedInt: true
 supportMultipleResponses: true
 useSingleRequestParameter: true
+infoEmail: rodzilla@proton.me
 typeMappings:
   int: isize
   integer: isize
