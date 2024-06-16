@@ -1,0 +1,19 @@
+modelNamePrefix: ""
+packageVersion: "1.0.0"
+modelNameSuffix: ""
+apiNameSuffix: "Api"
+bestFitInt: true
+modelPropertyNaming: "camelCase"
+hideGenerationTimestamp: true
+packageName: "mistral-rouille"
+projectName: "MistralRouille"
+library: "reqwest"
+supportAsync: true
+preferUnsignedInt: true
+supportMultipleResponses: true
+useSingleRequestParameter: true
+typeMappings:
+  int: isize
+  integer: isize
+  str: String
+avoidBoxedModels: true
