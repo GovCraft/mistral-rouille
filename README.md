@@ -24,10 +24,11 @@ or add
 ```toml
 mistral-rouille = "1.1.2"
 ```
+to Cargo.toml
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://api.mistral.ai/v1*
+All URIs are relative to *https://api.mistral.ai/v1* or *https://codestral.mistral.ai/v1* if you're using Codestral
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -106,13 +107,6 @@ Class | Method | HTTP request | Description
  - [UploadFileResponse](docs/UploadFileResponse.md)
  - [WandbIntegration](docs/WandbIntegration.md)
  - [WandbIntegrationOut](docs/WandbIntegrationOut.md)
-
-
-To get access to the crate's generated documentation, use:
-
-```
-cargo doc --open
-```
 
 ## Author
 
