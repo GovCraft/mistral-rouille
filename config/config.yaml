@@ -4,7 +4,7 @@ modelNameSuffix: ""
 apiNameSuffix: "Api"
 bestFitInt: true
 modelPropertyNaming: "camelCase"
-hideGenerationTimestamp: true
+hideGenerationTimestamp: false
 packageName: "mistral-rouille"
 projectName: "MistralRouille"
 library: "reqwest"
