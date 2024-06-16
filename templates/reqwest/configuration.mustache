@@ -83,7 +83,7 @@ impl Default for Configuration {
             client: {{#supportMiddleware}}reqwest_middleware::ClientBuilder::new(reqwest{{^supportAsync}}::blocking{{/supportAsync}}::Client::new()).build(){{/supportMiddleware}}{{^supportMiddleware}}reqwest{{^supportAsync}}::blocking{{/supportAsync}}::Client::new(){{/supportMiddleware}},
             basic_auth: None,
             oauth_access_token: None,
-            bearer_access_token: None,
+            bearer_access_token: std::env::var("MISTRAL_API_KEY").ok(),
             api_key: None,
 {{#withAWSV4Signature}}            aws_v4_key: None,{{/withAWSV4Signature}}
         }
