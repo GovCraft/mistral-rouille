@@ -4,18 +4,12 @@ version = "{{#lambdaVersion}}{{{packageVersion}}}{{/lambdaVersion}}"
 {{#infoEmail}}
 authors = ["{{{.}}}"]
 {{/infoEmail}}
-{{^infoEmail}}
-authors = ["OpenAPI Generator team and contributors"]
-{{/infoEmail}}
-{{#appDescription}}
-description = "{{{.}}}"
-{{/appDescription}}
+description = "Mistral Rouille is a Rust crate customized from Mistral's official OpenAPI specification. This crate provides a convenient and type-safe interface for interacting with Mistral's API, using the Reqwest crate for HTTP requests. Designed to be easily integrated into your Rust projects, Mistral Rouille offers robust functionality for all Mistral API endpoints, ensuring seamless communication with the configured endpoint."
 {{#licenseInfo}}
 license = "{{.}}"
 {{/licenseInfo}}
 {{^licenseInfo}}
-
-license = "Apache2"
+license = "MIT OR Apache-2.0"
 {{/licenseInfo}}
 edition = "2021"
 {{#publishRustRegistry}}
@@ -30,6 +24,9 @@ documentation = "{{.}}"
 {{#homePageUrl}}
 homepage = "{{.}}
 {{/homePageUrl}}
+keywords=["openapi","mistral","llm","api-client","codegen"]
+categories=["network-programming","api-bindings","web-programming::http-client","asynchronous","web-programming"]
+readme = "README.md"
 
 [dependencies]
 dotenv = { version = "0.15.0", features = ["clap"] }
