@@ -45,4 +45,4 @@ fi
 find generated-client -name "*.rs" | xargs rustfmt --edition 2021
 
 # Copy the generated README to the workspace root
-cp ../generated-client/README.md ../README.md
+cp ./generated-client/README.md ./README.md
