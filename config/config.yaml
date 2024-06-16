@@ -2,6 +2,7 @@ modelNamePrefix: ""
 packageVersion: "1.1.4"
 modelNameSuffix: ""
 apiNameSuffix: "Api"
+repositoryUrl: "https://github.com/GovCraft/mistral-rouille"
 bestFitInt: true
 modelPropertyNaming: "camelCase"
 hideGenerationTimestamp: false
