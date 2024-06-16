@@ -706,7 +706,7 @@ dependencies = [
 
 [[package]]
 name = "mistral-rouille"
-version = "0.0.2"
+version = "1.0.0"
 dependencies = [
  "reqwest",
  "serde",
